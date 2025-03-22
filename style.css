@@ -1,0 +1,138 @@
+/* Importing Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;  
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body .temp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  padding: 15px;
+  overflow: hidden;
+}
+
+#pic{
+  width: 200px;
+}
+
+.wrapper {
+  /* max-width: 500px; */
+  /* width: 90%; */
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .title {
+  height: 120px;
+  background: #16a085;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper form {
+  /* width: 500px; */
+  padding: 25px 35px;
+}
+
+.wrapper form .row {
+  height: 60px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.wrapper form .row input, .row select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 70px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+form .row input::placeholder {
+  color: #999;
+}
+
+.wrapper form .row i{
+  position: absolute;
+  width: 55px;
+  height: 100%;
+  color: #fff;
+  font-size: 15px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wrapper form .button button {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #16a085;
+  border: 3px solid #16a085;
+  cursor: pointer;
+}
+
+form .button button:hover {
+  background: #12876f;
+  color: #12876f;
+  background: none;
+}
+
+#shpass:hover{
+  cursor: pointer;
+  color: rgb(56, 56, 245)!important;
+
+}
+
+.title-s{
+  font-weight: bolder;
+}
+
+.i-title{
+  /* padding: 2px 0px; */
+  border-bottom: 2px solid rgb(152, 152, 152);
+}
+
+.template .feild{
+  margin: 50px 0px;
+}
+
+.template .feild h4{
+  font-size: 1.3rem;
+}
+
+#ordinary{
+  margin-top: 20px;
+  line-height: 0.7rem;
+  font-size: 1rem;
+}
+
+.box {
+    padding: 3rem 1.25rem;
+    background-color: #fff;
+    border-radius: 10px;
+    height: fit-content;
+    z-index: 1;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 3px rgba(0, 0, 0, 0.2);
+}

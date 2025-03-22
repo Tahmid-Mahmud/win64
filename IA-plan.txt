@@ -1,0 +1,10 @@
+[Format is in Diary]
+
+SELECT the icons for the academic report,co-curricular part, extra-curricular....
+
+profile pg info fix with RFS and update them with localstorage.
+
+* No extra info needed for discipline(concrete line just)
+
+
+# Build form master pg(link two person 2144 & 2120)
