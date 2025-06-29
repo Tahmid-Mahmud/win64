@@ -1,13 +1,39 @@
-[Format is in Diary]
+Try in titas with the rqequired permisons
 
-* SELECT the icons for the academic report,co-curricular part, extra-curricular....
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
 
-* profile pg info fix with RFS and update them with localstorage.
+import pyrebase
 
-* No extra info needed for discipline(concrete line just)
+firebaseConfig = {
+    "apiKey": "YOUR_API_KEY",
+    "authDomain": "your-project-id.firebaseapp.com",
+    "databaseURL": "https://your-database-name.firebaseio.com",
+    "storageBucket": "your-project-id.appspot.com",
+}
 
-[Edit Part]
-A modal dialogue will open ==> options will be there (IA)
+firebase = pyrebase.initialize_app(firebaseConfig)
+db = firebase.database()
 
+Write
+  db.child("users").child("user1").set({"name": "Bob", "age": 25})
+Read
+  users = db.child("users").get()
+  print(users.val())
 
-# Build form master pg(link two person 2144 & 2120)
+🔄 Updating Data
+Suppose you have this data:
+
+"users": {
+  "user1": {
+    "name": "Alice",
+    "age": 30
+  }
+}
+
+To update age only:
+  db.child("users").child("user1").update({"age": 31})
