@@ -1,3 +1,24 @@
+from PIL import Image  # Make sure Pillow is installed
+
+# Load the icon
+icon_image = ctk.CTkImage(
+    light_image=Image.open("create_icon.png"),
+    dark_image=Image.open("create_icon.png"),
+    size=(20, 20)
+)
+
+# Button with icon on the right
+open_window_button = ctk.CTkButton(
+    main_frame,
+    text="Register User",
+    image=icon_image,
+    compound="right",  # <-- This places the image on the right side of the text
+    command=open_subwindow
+)
+open_window_button.pack(pady=10)
+
+### up the icon adding part ###
+
 Try in titas with the rqequired permisons
 
 {
